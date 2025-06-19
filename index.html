@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>XVOICE - Entertainment Redefined</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(120deg, #ff0080, #7928ca);
+    }
+
+    .logo {
+      font-size: 3rem;
+      letter-spacing: 0.2rem;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .project-card {
+      background: #222;
+      margin: 1rem auto;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 400px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .cta button {
+      padding: 0.7rem 2rem;
+      border: none;
+      background: #ff0080;
+      color: white;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">XVOICE</h1>
+    <p class="tagline">Where Music, Animation, Events, and Stories Collide</p>
+  </header>
+
+  <section class="about">
+    <h2>About XVOICE</h2>
+    <p>XVOICE blends music, animation, events, and storytelling into immersive experiences. Join us on the journey as a fan or early investor.</p>
+  </section>
+
+  <section class="projects">
+    <h2>Our World</h2>
+    <div class="project-card">🎵 Music Projects</div>
+    <div class="project-card">🎬 Animation Shorts</div>
+    <div class="project-card">🎤 Live Events</div>
+    <div class="project-card">📖 Story Universes</div>
+  </section>
+
+  <section class="cta">
+    <h2>Become a Part of XVOICE</h2>
+    <p>Follow, invest, and grow with us. The story is just beginning.</p>
+    <button onclick="alert('Coming soon!')">Join the Journey</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 XVOICE. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    // GSAP Animations
+    window.onload = () => {
+      gsap.from(".logo", { duration: 1.5, y: -50, opacity: 0, ease: "bounce" });
+      gsap.from(".tagline", { duration: 1.2, delay: 0.5, opacity: 0, y: 30 });
+      gsap.from(".project-card", {
+        duration: 1,
+        opacity: 0,
+        y: 50,
+        stagger: 0.3,
+        delay: 1
+      });
+    };
+  </script>
+</body>
+</html>

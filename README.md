@@ -41,3 +41,7 @@
 - Share feedback
 - Suggest features
 - Contribute as a designer, animator, or collaborator
+
+---
+
+© 2025 XVOICE. All rights reserved.
